@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Mclipper extends CustomClipper<Path> {
@@ -24,4 +23,3 @@ class Mclipper extends CustomClipper<Path> {
     return true;
   }
 }
-

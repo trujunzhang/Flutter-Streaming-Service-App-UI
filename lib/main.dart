@@ -4,7 +4,7 @@ import 'src/restaurant_detail/restaurant_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Home(),
+    home: RestaurantDetail(),
     debugShowCheckedModeBanner: false,
   ));
 }

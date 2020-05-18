@@ -1,21 +1,20 @@
-
 import 'package:flutter/material.dart';
 
 import 'widget/bottom_part.dart';
 import 'widget/top_part.dart';
 
-class Home extends StatefulWidget {
+class RestaurantDetail extends StatefulWidget {
   @override
-  _HomeState createState() => new _HomeState();
+  _RestaurantDetailState createState() => new _RestaurantDetailState();
 }
 
-class _HomeState extends State<Home> {
+class _RestaurantDetailState extends State<RestaurantDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[HomeScreeTopPart(), HomeScreenBottomPart()],
+          children: <Widget>[ScreeTopPart(), ScreenBottomPart()],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -44,7 +43,3 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
-
-
-

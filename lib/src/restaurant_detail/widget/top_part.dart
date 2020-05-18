@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import 'mc_lipper.dart';
 
-class HomeScreeTopPart extends StatelessWidget {
+class ScreeTopPart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
@@ -30,13 +29,13 @@ class HomeScreeTopPart extends StatelessWidget {
                     decoration: BoxDecoration(
                         gradient: LinearGradient(
                             colors: [
-                              const Color(0x00000000),
-                              const Color(0xD9333333)
-                            ],
+                          const Color(0x00000000),
+                          const Color(0xD9333333)
+                        ],
                             stops: [
-                              0.0,
-                              0.9
-                            ],
+                          0.0,
+                          0.9
+                        ],
                             begin: FractionalOffset(0.0, 0.0),
                             end: FractionalOffset(0.0, 1.0))),
                     child: Padding(
@@ -122,4 +121,3 @@ class HomeScreeTopPart extends StatelessWidget {
     );
   }
 }
-

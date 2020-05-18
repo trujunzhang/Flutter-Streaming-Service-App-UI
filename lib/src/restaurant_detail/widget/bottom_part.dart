@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-class HomeScreenBottomPart extends StatelessWidget {
+class ScreenBottomPart extends StatelessWidget {
   List<String> images = [
     "assets/images/runaways.jpg",
     "assets/images/avengers.jpg",
@@ -97,4 +96,3 @@ class HomeScreenBottomPart extends StatelessWidget {
     );
   }
 }
-
