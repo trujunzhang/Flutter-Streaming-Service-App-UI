@@ -71,6 +71,17 @@ class ScreeTopPart extends StatelessWidget {
                     backgroundColor: Colors.white,
                     onPressed: () {},
                     child: Icon(
+                      Icons.edit,
+                      color: Color(0xFFE52020),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 12.0,
+                  ),
+                  FloatingActionButton(
+                    backgroundColor: Colors.white,
+                    onPressed: () {},
+                    child: Icon(
                       Icons.photo_camera,
                       color: Color(0xFFE52020),
                     ),

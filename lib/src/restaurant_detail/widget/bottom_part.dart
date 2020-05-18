@@ -68,15 +68,16 @@ class ScreenBottomPart extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            padding: EdgeInsets.symmetric(horizontal: 8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "Bussiness Photo",
+                  "Business Photo",
                   style: TextStyle(
                       fontSize: 22.0, fontFamily: "SF-Pro-Display-Bold"),
                 ),
+                Spacer(),
                 FlatButton(
                   child: Icon(Icons.arrow_forward),
                   onPressed: () {},
