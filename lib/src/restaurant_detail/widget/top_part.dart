@@ -5,6 +5,8 @@ import 'mc_lipper.dart';
 class ScreeTopPart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var image = Image.asset("assets/images/banner.png",
+                      fit: BoxFit.cover, width: double.infinity);
     return new Container(
       height: 420.0,
       child: Stack(
@@ -21,8 +23,7 @@ class ScreeTopPart extends StatelessWidget {
               ]),
               child: Stack(
                 children: <Widget>[
-                  Image.asset("assets/images/banner.png",
-                      fit: BoxFit.cover, width: double.infinity),
+                  image,
                   Container(
                     height: double.infinity,
                     width: double.infinity,
@@ -44,13 +45,6 @@ class ScreeTopPart extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
-                            "WATCH BEFORE EVERONE",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15.0,
-                                fontFamily: "SF-Pro-Display-Bold"),
-                          ),
                           Text(
                             "The Punisher: Season 2",
                             style: TextStyle(
@@ -77,7 +71,7 @@ class ScreeTopPart extends StatelessWidget {
                     backgroundColor: Colors.white,
                     onPressed: () {},
                     child: Icon(
-                      Icons.add,
+                      Icons.photo_camera,
                       color: Color(0xFFE52020),
                     ),
                   ),
@@ -93,21 +87,23 @@ class ScreeTopPart extends StatelessWidget {
                           vertical: 15.0, horizontal: 80.0),
                       child: Row(
                         children: <Widget>[
+                          RotatedBox(
+                            quarterTurns: 2,
+                            child: Icon(Icons.rate_review,
+                                size: 25.0, color: Colors.white),
+                          ),
+
+                          SizedBox(
+                            width: 5.0,
+                          ),
                           Text(
-                            "Watch Now",
+                            "Write a review",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 15.0,
                                 fontFamily: "SF-Pro-Display-Bold"),
                           ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          RotatedBox(
-                            quarterTurns: 2,
-                            child: Icon(Icons.arrow_back,
-                                size: 25.0, color: Colors.white),
-                          )
+
                         ],
                       ),
                     ),

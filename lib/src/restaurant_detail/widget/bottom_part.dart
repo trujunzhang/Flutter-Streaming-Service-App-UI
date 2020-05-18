@@ -64,7 +64,7 @@ class ScreenBottomPart extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Container(
       height: 360.0,
-      margin: EdgeInsets.only(left: 65.0),
+      margin: EdgeInsets.only(left: 5.0),
       child: Column(
         children: <Widget>[
           Padding(
@@ -73,12 +73,12 @@ class ScreenBottomPart extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "Watch now",
+                  "Bussiness Photo",
                   style: TextStyle(
                       fontSize: 22.0, fontFamily: "SF-Pro-Display-Bold"),
                 ),
                 FlatButton(
-                  child: Text("View more"),
+                  child: Icon(Icons.arrow_forward),
                   onPressed: () {},
                 )
               ],
