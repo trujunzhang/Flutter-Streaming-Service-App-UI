@@ -119,12 +119,31 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
     );
   }
 
+  Widget buildTopActionBar(BuildContext context){
+    return Align(
+      alignment: Alignment.topLeft,
+      child: Padding(
+        padding: const EdgeInsets.only(top: 20.0),
+        child: IconButton(
+            icon: Icon(Icons.arrow_back),
+            color: Colors.white,
+            onPressed: (){
+              Navigator.of(context).pop();
+            }
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Container(
       height: 420.0,
       child: Stack(
-        children: <Widget>[buildBg(), buildFg()],
+        children: <Widget>[buildBg(),
+          buildFg(),
+          buildTopActionBar(context),
+        ],
       ),
     );
   }
