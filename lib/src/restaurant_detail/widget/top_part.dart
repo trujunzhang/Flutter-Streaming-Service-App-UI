@@ -119,7 +119,7 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
     );
   }
 
-  Widget buildTopActionBar(BuildContext context){
+  Widget buildTopActionBar(BuildContext context) {
     return Align(
       alignment: Alignment.topLeft,
       child: Padding(
@@ -127,10 +127,9 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
         child: IconButton(
             icon: Icon(Icons.arrow_back),
             color: Colors.white,
-            onPressed: (){
+            onPressed: () {
               Navigator.of(context).pop();
-            }
-        ),
+            }),
       ),
     );
   }
@@ -140,7 +139,8 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
     return new Container(
       height: 420.0,
       child: Stack(
-        children: <Widget>[buildBg(),
+        children: <Widget>[
+          buildBg(),
           buildFg(),
           buildTopActionBar(context),
         ],
