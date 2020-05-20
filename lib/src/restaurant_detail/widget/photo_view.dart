@@ -24,13 +24,11 @@ class _PhotoViewState extends State<PhotoView> {
                   blurRadius: 10.0,
                   offset: Offset(0.0, 10.0))
             ]),
-        child:
-        Image.asset(
+        child: Image.asset(
           "assets/images/runaways.jpg",
           width: double.infinity,
           fit: BoxFit.cover,
         ),
-
       ),
     );
   }
