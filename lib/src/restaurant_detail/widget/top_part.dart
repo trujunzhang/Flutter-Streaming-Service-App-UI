@@ -83,7 +83,7 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
                     ),
                   ),
                   SizedBox(
-                    width: 12.0,
+                    width: 8.0,
                   ),
                   FloatingActionButton(
                     backgroundColor: Colors.white,
@@ -94,7 +94,7 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
                     ),
                   ),
                   SizedBox(
-                    width: 12.0,
+                    width: 8.0,
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
@@ -105,14 +105,14 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
                           vertical: 15.0, horizontal: 80.0),
                       child: Row(
                         children: <Widget>[
-                          RotatedBox(
-                            quarterTurns: 2,
-                            child: Icon(Icons.rate_review,
-                                size: 25.0, color: Colors.white),
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
+//                          RotatedBox(
+//                            quarterTurns: 2,
+//                            child: Icon(Icons.rate_review,
+//                                size: 25.0, color: Colors.white),
+//                          ),
+//                          SizedBox(
+//                            width: 5.0,
+//                          ),
                           Text(
                             "Write a review",
                             style: TextStyle(
