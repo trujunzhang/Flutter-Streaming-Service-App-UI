@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ScreenBottomPart extends StatelessWidget {
+class ScreenBottomPart extends StatefulWidget {
+  ScreenBottomPart({Key key}) : super(key: key);
+
+  @override
+  _ScreenBottomPartState createState() => _ScreenBottomPartState();
+}
+
+class _ScreenBottomPartState extends State<ScreenBottomPart> {
   List<String> images = [
     "assets/images/runaways.jpg",
     "assets/images/avengers.jpg",

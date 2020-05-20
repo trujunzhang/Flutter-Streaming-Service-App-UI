@@ -14,7 +14,7 @@ class _RestaurantDetailState extends State<RestaurantDetail> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[ScreeTopPart(), ScreenBottomPart()],
+          children: <Widget>[ScreenTopPart(), ScreenBottomPart()],
         ),
       ),
     );

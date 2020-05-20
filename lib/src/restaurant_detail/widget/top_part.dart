@@ -2,11 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'mc_lipper.dart';
 
-class ScreeTopPart extends StatelessWidget {
+class ScreenTopPart extends StatefulWidget {
+  ScreenTopPart({Key key}) : super(key: key);
+
+  @override
+  _ScreenTopPartState createState() => _ScreenTopPartState();
+}
+
+class _ScreenTopPartState extends State<ScreenTopPart> {
   @override
   Widget build(BuildContext context) {
     var image = Image.asset("assets/images/banner.png",
-                      fit: BoxFit.cover, width: double.infinity);
+        fit: BoxFit.cover, width: double.infinity);
     return new Container(
       height: 420.0,
       child: Stack(
@@ -103,7 +110,6 @@ class ScreeTopPart extends StatelessWidget {
                             child: Icon(Icons.rate_review,
                                 size: 25.0, color: Colors.white),
                           ),
-
                           SizedBox(
                             width: 5.0,
                           ),
@@ -114,7 +120,6 @@ class ScreeTopPart extends StatelessWidget {
                                 fontSize: 15.0,
                                 fontFamily: "SF-Pro-Display-Bold"),
                           ),
-
                         ],
                       ),
                     ),
