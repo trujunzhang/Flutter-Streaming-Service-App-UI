@@ -73,6 +73,7 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
         child: Row(
           children: <Widget>[
             FloatingActionButton(
+              heroTag: null,
               backgroundColor: Colors.white,
               onPressed: () {},
               child: Icon(
@@ -84,6 +85,7 @@ class _ScreenTopPartState extends State<ScreenTopPart> {
               width: 8.0,
             ),
             FloatingActionButton(
+              heroTag: null,
               backgroundColor: Colors.white,
               onPressed: () {},
               child: Icon(
