@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PhotoView extends StatefulWidget {
-  PhotoView({Key key}) : super(key: key);
+  const PhotoView({Key? key}) : super(key: key);
 
   @override
   _PhotoViewState createState() => _PhotoViewState();

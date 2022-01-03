@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'photo_view.dart';
 
 class ScreenBottomPart extends StatefulWidget {
-  ScreenBottomPart({Key key}) : super(key: key);
+  const ScreenBottomPart({Key? key}) : super(key: key);
 
   @override
   _ScreenBottomPartState createState() => _ScreenBottomPartState();
@@ -19,10 +19,10 @@ class _ScreenBottomPartState extends State<ScreenBottomPart> {
   List<String> titles = ["Runaways", "Avengers: infinity war", "Black Panther"];
 
   List<Widget> movies() {
-    List<Widget> movieList = new List();
+    List<Widget> movieList = [];
 
     for (int i = 0; i < 3; i++) {
-      var movieitem = PhotoView();
+      var movieitem = const PhotoView();
       movieList.add(movieitem);
     }
     return movieList;
@@ -30,30 +30,30 @@ class _ScreenBottomPartState extends State<ScreenBottomPart> {
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
+    return Container(
       height: 360.0,
-      margin: EdgeInsets.only(left: 5.0),
+      margin: const EdgeInsets.only(left: 5.0),
       child: Column(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text(
+                const Text(
                   "Business Photo",
                   style: TextStyle(
                       fontSize: 22.0, fontFamily: "SF-Pro-Display-Bold"),
                 ),
-                Spacer(),
+                const Spacer(),
                 FlatButton(
-                  child: Icon(Icons.arrow_forward),
+                  child: const Icon(Icons.arrow_forward),
                   onPressed: () {},
                 )
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: 250.0,
             child: ListView(
               scrollDirection: Axis.horizontal,

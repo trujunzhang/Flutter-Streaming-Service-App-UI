@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Mclipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
-    var path = new Path();
+    var path = Path();
     path.lineTo(0.0, size.height - 100.0);
 
     var controlpoint = Offset(35.0, size.height);

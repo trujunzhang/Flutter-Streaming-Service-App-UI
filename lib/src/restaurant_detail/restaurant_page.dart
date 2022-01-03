@@ -4,8 +4,10 @@ import 'widget/bottom_part.dart';
 import 'widget/top_part.dart';
 
 class RestaurantDetail extends StatefulWidget {
+  const RestaurantDetail({Key? key}) : super(key: key);
+
   @override
-  _RestaurantDetailState createState() => new _RestaurantDetailState();
+  _RestaurantDetailState createState() => _RestaurantDetailState();
 }
 
 class _RestaurantDetailState extends State<RestaurantDetail> {
@@ -14,7 +16,7 @@ class _RestaurantDetailState extends State<RestaurantDetail> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[ScreenTopPart(), ScreenBottomPart()],
+          children: const <Widget>[ScreenTopPart(), ScreenBottomPart()],
         ),
       ),
     );
